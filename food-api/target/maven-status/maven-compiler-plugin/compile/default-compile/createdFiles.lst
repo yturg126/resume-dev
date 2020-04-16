@@ -1,0 +1,7 @@
+com/food/config/Swagger2.class
+com/food/ResumeBaseApplication.class
+com/food/controller/HelloController.class
+com/food/controller/AuthCenterController.class
+com/food/controller/IndexController.class
+com/food/config/CorsConfig.class
+com/food/aspect/ServiceLogAspect.class

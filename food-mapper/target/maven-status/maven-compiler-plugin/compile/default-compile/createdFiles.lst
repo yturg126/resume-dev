@@ -1,0 +1,15 @@
+com/food/mapper/OrderStatusMapper.class
+com/food/mapper/StuMapper.class
+com/food/mapper/UserAddressMapper.class
+com/food/mapper/OrdersMapper.class
+com/food/mapper/CarouselMapper.class
+com/food/mapper/ItemsSpecMapper.class
+com/food/mapper/ItemsParamMapper.class
+com/food/mapper/ItemsCommentsMapper.class
+com/food/mapper/ItemsImgMapper.class
+com/food/mapper/OrderItemsMapper.class
+com/food/mapper/CategoryMapper.class
+com/food/mapper/custom/CategoryMapperCustom.class
+com/food/my/mapper/MyMapper.class
+com/food/mapper/ItemsMapper.class
+com/food/mapper/UsersMapper.class
