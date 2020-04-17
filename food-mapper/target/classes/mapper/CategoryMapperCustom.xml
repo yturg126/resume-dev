@@ -41,6 +41,52 @@
       f.father_id = #{rootCategoryId};
   </select>
 
+  <resultMap id="myNewItemsVO" type="com.food.vo.NewItemsVO">
+    <id column="rootCatId" property="rootCatId"/>
+    <result column="rootCatName" property="rootCatName"/>
+    <result column="slogan" property="slogan"/>
+    <result column="catImage" property="catImage"/>
+    <result column="bgColor" property="bgColor"/>
+
+    <collection property="simpleItemList" ofType="com.food.vo.SimpleItemVO">
+      <id column="itemId" property="itemId"/>
+      <result column="itemName" property="itemName"/>
+      <result column="itemUrl" property="itemUrl"/>
+    </collection>
+  </resultMap>
+
+  <select id="getSixNewItemLazy" resultMap="myNewItemsVO" parameterType="java.util.Map">
+    SELECT
+        f.id AS rootCatId,
+        f.`name` AS	rootCatName,
+        f.slogan AS slogan,
+        f.cat_image as catImage,
+        f.bg_color as bgColor,
+        i.id as itemId,
+        i.item_name AS itemName,
+        i.created_time AS createdTime,
+        iimg.url AS itemUrl
+    FROM
+      category f
+    LEFT JOIN
+      items i
+    ON
+      f.id = i.root_cat_id
+    LEFT JOIN
+      items_img iimg
+    ON
+      i.id = iimg.item_id
+    WHERE
+      f.type = 1
+    AND
+      i.root_cat_id = #{paramsMap.rootCatId}
+    AND
+      iimg.is_main = 1
+    ORDER BY
+      i.created_time
+    DESC
+      LIMIT 0, 6
+  </select>
 
 
 </mapper>

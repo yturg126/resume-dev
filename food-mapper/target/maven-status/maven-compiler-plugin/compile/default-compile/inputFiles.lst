@@ -6,6 +6,7 @@
 /Users/zouxinjie/IdeaProjects/food-dev/food-mapper/src/main/java/com/food/mapper/CategoryMapper.java
 /Users/zouxinjie/IdeaProjects/food-dev/food-mapper/src/main/java/com/food/mapper/OrderStatusMapper.java
 /Users/zouxinjie/IdeaProjects/food-dev/food-mapper/src/main/java/com/food/mapper/ItemsImgMapper.java
+/Users/zouxinjie/IdeaProjects/food-dev/food-mapper/src/main/java/com/food/mapper/custom/CategoryMapperCustom.java
 /Users/zouxinjie/IdeaProjects/food-dev/food-mapper/src/main/java/com/food/mapper/OrderItemsMapper.java
 /Users/zouxinjie/IdeaProjects/food-dev/food-mapper/src/main/java/com/food/mapper/StuMapper.java
 /Users/zouxinjie/IdeaProjects/food-dev/food-mapper/src/main/java/com/food/mapper/UsersMapper.java

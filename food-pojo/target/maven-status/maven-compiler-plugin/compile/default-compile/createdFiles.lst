@@ -6,7 +6,9 @@ com/food/pojo/Stu.class
 com/food/pojo/ItemsComments.class
 com/food/pojo/Carousel.class
 com/food/pojo/UserAddress.class
+com/food/vo/SimpleItemVO.class
 com/food/pojo/Category.class
+com/food/vo/NewItemsVO.class
 com/food/pojo/ItemsImg.class
 com/food/pojo/OrderStatus.class
 com/food/vo/SubCategoryVO.class
